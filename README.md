@@ -23,24 +23,7 @@ Questions are grouped into **Basic**, **Intermediate** and **Advanced** levels.
 
 ## 🗂️ Database Schema
 
-The database `Pizza_Hut` has 4 related tables:
-
-| Table | Columns |
-|---|---|
-| `orders` | `order_id` (PK), `order_date`, `order_time` |
-| `order_details` | `order_details_id` (PK), `order_id` (FK), `pizza_id` (FK), `quantity` |
-| `pizzas` | `pizza_id` (PK), `pizza_type_id` (FK), `size`, `price` |
-| `pizza_types` | `pizza_type_id` (PK), `name`, `category`, `ingredients` |
-
-**Relationships**
-
-- `orders.order_id` → `order_details.order_id`
-- `pizzas.pizza_id` → `order_details.pizza_id`
-- `pizza_types.pizza_type_id` → `pizzas.pizza_type_id`
-
-<p align="center">
-  <img src="images/Pizza_Hut_Schema_Portrait.png" alt="Pizza Hut Database Schema" width="500">
-</p>
+![image alt](https://github.com/Bhavesh-code1/Pizza-sales---SQL---Project/blob/a860bb048eded3e59695f2814e973b4041ef2363/Pizza_Hut_Schema_Diagram.png)
 
 ---
 
